@@ -1,0 +1,3 @@
+# <PREFIX>,<Direct|Reg>,<ActionName>,<コメント>
+#！！！！！bashで構文解析しているため、半角句ペース禁止
+/kakunin/pApi,Direct,ApiKakunin,API確認用、testの文言は禁止。

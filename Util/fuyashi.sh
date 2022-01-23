@@ -1,0 +1,16 @@
+#!/bin/bash
+echo $1 |sed  s'@uriage@tel@g'
+echo $1 |sed  s'@uriage@mail@g'
+echo $1 |sed  s'@uriage@houmon@g'
+echo $1 |sed  s'@uriage@akakku@g'
+echo $1 |sed  s'@uriage@mikomi@g'
+echo $1 |sed  s'@uriage@syoudan@g'
+echo $1 |sed  s'@uriage@jyucyuu@g'
+echo $1 |sed  s'@uriage@ng@g'
+echo $1 |sed  s'@uriage@follow@g'
+echo $1 |sed  s'@uriage@sonota@g'
+echo $1 |sed  s'@uriage@fannel_end_atakku@g'
+echo $1 |sed  s'@uriage@fannel_end_mikomi@g'
+echo $1 |sed  s'@uriage@fannel_end_syoudan@g'
+echo $1 |sed  s'@uriage@fannel_end_jyucyuu@g'
+

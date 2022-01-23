@@ -1,0 +1,8 @@
+{
+   "require": {
+       "smarty/smarty": "3.*",
+      "ramsey/uuid": "^3.5",
+      "mongodb/mongodb": "^1.1",
+      "phpmailer/phpmailer": "^5.2"
+   }
+}

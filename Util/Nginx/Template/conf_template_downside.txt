@@ -1,0 +1,33 @@
+
+
+    #-----------------------------------------------------------------------
+    # 基本的な応答処理
+    #-----------------------------------------------------------------------
+    location / {
+        include /home/sdl/devel/SideBizzManage/Util/Nginx/jni_manage-dev.sidebizz.net/TopPage;
+        break;
+    }
+
+    #-----------------------------------------------------------------------
+    # PHPの定義
+    #-----------------------------------------------------------------------
+    location ~ \.php$ {
+        include        fastcgi_params;
+        fastcgi_pass   unix:/tmp/fcgi_temp/fcgi-phpfcgi.socket;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  /home/sdl/public_html/manage-dev.sidebizz.net$fastcgi_script_name;
+        proxy_read_timeout 300;
+    }
+
+    #-----------------------------------------------------------------------
+    # APIリクエストの定義
+    #-----------------------------------------------------------------------
+    location ~ /pApi$ {
+        include        fastcgi_params;
+        fastcgi_pass   unix:/tmp/fcgi_temp/fcgi-phpfcgi.socket;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  /home/sdl/public_html/manage-dev.sidebizz.net/index.php;
+        proxy_read_timeout 300;
+    }
+}
+

@@ -1,0 +1,3 @@
+include ### ULIB ###/Util/Nginx/jni_### FQDN ###/Common;
+sub_filter '###ACTION###' '### Action Name ###';
+try_files $uri $uri?$args /### Template ### =200;
