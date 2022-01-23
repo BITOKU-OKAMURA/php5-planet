@@ -1,0 +1,7 @@
+{
+    "/monitor.html":        {"action_name":"TopPageAction",     "template_file":"Template1"},
+    "/monitor_line1.html":{"action_name":"TopPageAction",     "template_file":"Template1"},
+    "/monitor_line2.html":{"action_name":"TopPageAction",     "template_file":"Template1"},
+    "/monitor_line3.html":{"action_name":"TopPageAction",     "template_file":"Template1"},
+    "/action2/":{"action_name":"action2",           "template_file":"Template1"}
+}
