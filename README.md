@@ -39,3 +39,12 @@
 引数にして呼び出す。既存のコードを参考に記載。  
 ④./Common/BL_Base.phpのコンストラクタで以下のように呼び出す。($db はBL_Baseクラスで宣言) 
 $this->db=new 【①で作ったクラス】;  
+ 
+
+# ４．プログラミング
+・チェック済ハンドラのメンバ→ $this->input  
+・出力専用のメンバ→ $this->Data  
+・処理はBL_【アクション名】クラスのexecuteメソッドに記述し、【アクション名】Controllerクラスにてjson出力されるか  
+smartyに払い出しされる。
+・データベースに関する処理はDB_Baseクラス内のLoggingSQLメソッドにて記載すること。また、ページネイト処理として  
+PageNateメソッド、CSV出力としてCsvOutputSQLメソッドが用意されている。
