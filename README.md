@@ -48,3 +48,12 @@ $this->db=new 【①で作ったクラス】;
 smartyに払い出しされる。
 ・データベースに関する処理はDB_Baseクラス内のLoggingSQLメソッドにて記載すること。また、ページネイト処理として  
 PageNateメソッド、CSV出力としてCsvOutputSQLメソッドが用意されている。
+
+
+# ５．SPAについて
+①./public_html/json/common/route.json に記載する  
+パラメータは左から URI ,アクション名 , テンプレート名 となる。  
+
+②./public_html/js/common/com_envrironment.js をHTMLテンプレートから呼び出す。
+③各種個別のアクションを実装し、com_envrironment.jsから呼び出されるようにする。
+④./public_html/templateフォルダにはunderscoreのテンプレートを格納する。
