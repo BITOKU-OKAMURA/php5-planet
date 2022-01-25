@@ -69,7 +69,8 @@ $this->db=new 【①で作ったクラス】;
         str_replace('### agent_corp_name ###',$agent_info["corporate_name"],
         str_replace('### master_corp_name ###',$_SESSION["LOGIN"]["corporate_name"],
         str_replace('### master_input_member_id ###',$dairitenDB->LoggingSQL('select 
-        consignar_hq_member.name as name from consignar_hq_member where  consignar_hq_member.id='.(int)$input["consignar_hq_member"]["pg_value"])['name'],
+        consignar_hq_member.name as name from consignar_hq_member where  consignar_hq_member.id='
+        .(int)$input["consignar_hq_member"]["pg_value"])['name'],
         str_replace('### URL ###',protocol.'://'.hostname.'/agent/'.$uuid.'/first_agree',
         str_replace('### 企業ID ###',$agent_info["company_prefix"],
         str_replace('### ONCYUU ###',$agent_info["kigyou_syubetsu"]==1 ? '御中': '様',
